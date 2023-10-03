@@ -120,7 +120,7 @@ function doesSubstringExist(largeString, substring) {
 }
 const largeString = "This is a sample string for testing.";
 const substring = "sample";
-console.log(doesSubstringExist(largeString, substring)); 
+console.log(doesSubstringExist(largeString, substring));
 
 
 
