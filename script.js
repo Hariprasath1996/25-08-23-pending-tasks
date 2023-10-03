@@ -49,3 +49,49 @@ function isValidEmail(email) {
 
 console.log(isValidEmail('example@email.com')); 
 console.log(isValidEmail('invalid-email')); 
+
+// 4. Calculate the factorial of a number using a recursive function.
+// // Test case
+// console.log(factorial(5)); // Output: 120
+
+function factorial(n) {
+  if (n === 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+console.log(factorial(5));
+
+//5. Reverse words in a sentence without reversing the individual words.
+// Test case
+// console.log(reverseWordsInSentence(&#39;Hello world&#39;)); // Output: &#39;olleH dlrow&#39;
+
+function reverseWordsInSentence(sentence) {
+  const words = sentence.split(' ');
+  const reversedWords = words.reverse();
+  return reversedWords.join(' ');
+}
+console.log(reverseWordsInSentence('Hello world')); 
+
+// Write a sum method which will work properly when invoked using either syntax below.
+//Test case
+// console.log(sum(2,3)); // Outputs 5
+// console.log(sum(2)(3)); // Outputs 5
+
+function sum(x, y) {
+  if (y === undefined) {
+    return function (z) {
+      return x + z;
+    };
+  } else {
+    return x + y;
+  }
+}
+console.log(sum(2, 3));   
+console.log(sum(2)(3));   
+
+
+
+
+
